@@ -5,6 +5,12 @@
       "password": "$2a$10$Tnyw9NlHJPf2fZhZnNCas.oRRO50bDJZ3jJbylnyFu7.n68ckLgZ.",
       "name": "Riccardo",
       "id": 1
+    },
+    {
+      "email": "francis@drake.com",
+      "password": "$2a$10$Rl2G45RkKJWrvvgfAqvhNe21sa41Cr38Xf5hY3nPpE5LNj5rZZnfu",
+      "name": "Francis Drake",
+      "id": 2
     }
   ],
   "movies-popular": [
@@ -113,20 +119,29 @@
     {
       "userId": 1,
       "movie": {
-        "id": 1,
-        "title": "Django",
-        "poster": "https://m.media-amazon.com/images/I/811V32gosPL._UX250_.jpg"
-      },
-      "id": 1
-    },
-    {
-      "userId": 1,
-      "movie": {
         "id": 7,
         "title": "Prova a prendermi",
         "poster": "https://www.picclickimg.com/unUAAOSw9X9imFvL/Prova-A-Prendermi-Film-2002-Poster-Locandina-45X32Cm.webp"
       },
       "id": 2
+    },
+    {
+      "userId": 2,
+      "movie": {
+        "id": 11,
+        "title": "Saint Seya: Soul of Gold",
+        "poster": "https://mr.comingsoon.it/imgdb/locandine/235x336/64011.jpg"
+      },
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "movie": {
+        "id": 1,
+        "title": "Django",
+        "poster": "https://m.media-amazon.com/images/I/811V32gosPL._UX250_.jpg"
+      },
+      "id": 4
     }
   ]
 }
