@@ -17,6 +17,7 @@ export class HomeComponent {
   allUsers: iUser[] = [];
   favorites: iFavorite[] = [];
   userId: number | null = null;
+  selectedMovieId: number | null = null;
 
   constructor(
     private movieSvc: MoviesService,
@@ -73,5 +74,9 @@ export class HomeComponent {
 
   isFavorite(movie: iMovie): boolean {
     return this.favorites.some((fav) => fav.movie.id === movie.id);
+  }
+
+  infoClick(movie: iMovie) {
+    this.selectedMovieId = this.selectedMovieId === movie.id ? null : movie.id;
   }
 }

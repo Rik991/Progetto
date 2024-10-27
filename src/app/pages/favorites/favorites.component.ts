@@ -10,6 +10,7 @@ import { FavoriteService } from '../../services/favorite.service';
 })
 export class FavoritesComponent implements OnInit {
   userId: number | null = null;
+  userName: string = '';
   favorites: iFavorite[] = [];
 
   constructor(
@@ -20,6 +21,7 @@ export class FavoritesComponent implements OnInit {
   ngOnInit() {
     this.authService.user$.subscribe((user) => {
       if (user) {
+        this.userName = user.name;
         this.userId = user.id;
         this.loadFavorites();
       }
